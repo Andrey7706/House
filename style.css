@@ -1,0 +1,644 @@
+@font-face {
+    font-family: 'Roboto Slab Light';
+    src: url('fonts/RobotoSlab-Light.eot');
+    src: url('fonts/RobotoSlab-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/RobotoSlab-Light.woff') format('woff'),
+    url('fonts/RobotoSlab-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab Regular';
+    src: url('fonts/RobotoSlab-Regular.eot');
+    src: url('fonts/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/RobotoSlab-Regular.woff') format('woff'),
+    url('fonts/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab Bold';
+    src: url('fonts/RobotoSlab-Bold.eot');
+    src: url('fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/RobotoSlab-Bold.woff') format('woff'),
+    url('fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, .wrapper {
+    width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto Slab Light', serif;
+    font-size: 15px;
+    color: #000;
+}
+
+.container {
+    width: 1230px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Roboto Slab Bold', serif;
+    font-size: 43px;
+    text-transform: uppercase;
+    color: #2f1059;
+    padding-left: 55px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: 'Roboto Slab Bold', serif;
+    font-size: 37px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Roboto Slab Bold', serif;
+    font-size: 20px;
+}
+
+/* Шапка сайта */
+
+.header {
+    height: 100px;
+    width: 100%;
+    background: #fff;
+}
+
+.logo {
+    float: left;
+    padding: 11px 18px 0 30px;
+}
+
+.title {
+    float: left;
+    text-transform: uppercase;
+    padding-right: 40px;
+}
+
+.title__top {
+    font-family: 'Roboto Slab Regular', serif;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 33px;
+}
+
+.title__bottom {
+    font-family: 'Roboto Slab Regular', serif;
+    font-size: 13px;
+}
+
+.menu {
+    float: left;
+    padding-top: 42px;
+}
+
+.menu__item {
+    display: inline-block;
+    font-family: 'Roboto Slab Bold', serif;
+    font-size: 14px;
+}
+
+.menu__item a {
+    color: #000;
+    padding: 8px 12px;
+}
+
+.menu__item a:hover {
+    background: #f7f2fe;
+    border-radius: 4px;
+}
+
+.phone {
+    float: right;
+    font-family: 'Roboto Slab Bold', serif;
+    font-size: 21px;
+    color: #2f1059;
+    padding-top: 10px;
+}
+
+.phone a {
+    font-size: 14px;
+    color: #2f1059;
+    border: 1px solid #2f1059;
+    display: block;
+    height: 38px;
+    width: 156px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 36px;
+    margin: 6px 0 0 15px;
+}
+
+.phone a:active {
+    color: #fff;
+    background: #2f1059;
+}
+
+/* Основной контент*/
+
+.main-screen {
+    width: 100%;
+    height: 628px;
+    background: url("img/house.png") no-repeat;
+    padding-top: 30px;
+}
+
+.cloud {
+    height: 191px;
+    background: url("img/cloud.png") no-repeat;
+    padding-top: 40px;
+    margin-left: 78px;
+}
+
+.cloud__top {
+    font-size: 22px;
+    color: #2f1059;
+    padding-left: 195px;
+}
+
+.cloud__bottom {
+    font-size: 20px;
+    color: #2f1059;
+    padding-left: 240px;
+}
+
+.cloud__top span, .cloud__bottom span {
+    font-family: 'Roboto Slab Bold', serif;
+}
+
+/* Блок формы*/
+
+.form {
+    width: 920px;
+    height: 378px;
+    margin: 128px auto 0;
+    background: url("img/bg-form.png") no-repeat;
+    text-align: center;
+}
+
+.form__title {
+    font-family: 'Roboto Slab Bold', serif;
+    font-size: 24px;
+    color: #fff;
+    padding-top: 93px;
+}
+
+.form__description {
+    font-size: 17px;
+    color: #fff;
+    padding-bottom: 23px;
+}
+
+.counter {
+    font-size: 15px;
+    color: #7925ec;
+    padding-top: 40px;
+}
+
+.counter span {
+    border: 1px solid #7925ec;
+    border-radius: 2px;
+    padding: 0 6px 0 7px;
+    font-family: 'Roboto Slab Bold', serif;
+    font-size: 20px;
+}
+
+input[type="text"], input[type="tel"] {
+    width: 201px;
+    background: #e8def6;
+    font-family: 'Roboto Slab Light', serif;
+    font-size: 16px;
+    color: #7e7885;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 15px 0 15px 46px;
+    margin-right: 4px;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus {
+    background: #fff;
+    color: #000;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+:focus::-moz-placeholder {
+    color: transparent
+}
+
+:focus:-moz-placeholder {
+    color: transparent
+}
+
+:focus:-ms-input-placeholder {
+    color: transparent
+}
+
+input[type="submit"] {
+    width: 274px;
+    background: #d22828;
+    color: #fff;
+    font-family: 'Roboto Slab Bold', serif;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 14px 0;
+}
+
+input[type="submit"]:active {
+    color: #d22828;
+    background: #fff;
+}
+
+/* Блок преимуществ */
+
+.advantages__wrap {
+    padding-bottom: 29px;
+}
+
+.advantages__wrap:after {
+    display: block;
+    content: '';
+    height: 100%;
+    clear: both;
+}
+
+.advantages__item {
+    width: 153px;
+    height: 146px;
+    background: url("img/ellipse.png") no-repeat;
+    font-family: 'Roboto Slab Regular', serif;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: -0.9px;
+    display: table;
+    float: left;
+    margin-left: 42px;
+}
+
+.advantages__item:nth-child(1), .advantages__item:nth-child(6) {
+    margin-top: 194px;
+}
+
+.advantages__item:nth-child(2), .advantages__item:nth-child(5) {
+    margin-top: 127px;
+}
+
+.advantages__item:nth-child(3), .advantages__item:nth-child(4) {
+    margin-top: 75px;
+}
+
+.advantages__item span {
+    font-family: 'Roboto Slab Bold', serif;
+}
+
+.advantages__item p {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+/* Фиолетовая волна */
+
+.purple-wave {
+    background: url("img/purple-wave.png") no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+.ready {
+    font-family: 'Roboto Slab Bold', serif;
+    font-size: 30px;
+    padding-top: 38px;
+}
+
+.delivery {
+    background: url("icon/finishflag.png") no-repeat 462px 17px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.insured {
+    width: 142px;
+    height: 123px;
+    background: url("img/thumb-up.png") no-repeat;
+    margin: 12px auto 0;
+}
+
+/* Блок расположение */
+
+.location {
+    text-align: center;
+    padding: 80px 0 110px;
+}
+
+.location h3 {
+    margin-top: -25px;
+}
+
+.location__desc {
+    font-size: 20px;
+    padding-top: 3px;
+}
+
+.location__image {
+    width: 100%;
+}
+
+.location__image:after {
+    display: block;
+    content: '';
+    height: 100%;
+    clear: both;
+}
+
+.location__left, .location__center, .location__right {
+    float: left;
+    margin: 0 -25px 0 -12px;
+    padding-bottom: -25px;
+}
+
+.location__left, .location__right {
+    padding-top: 20px;
+}
+
+.location__center {
+    padding-top: 45px;
+}
+
+/* Блок инфраструктура */
+
+.infrastructure {
+    background: url("img/bg-infrastructure.png") no-repeat;
+    width: 100%;
+    padding: 65px 0 86px;
+}
+
+.infrastructure__main {
+    padding-left: 90px;
+    padding-top: 54px;
+}
+
+.infrastructure__main:after {
+    display: block;
+    content: '';
+    height: 100%;
+    clear: both;
+}
+
+.infrastructure__main h3:after {
+    content: url("img/underline.png");
+    display: block;
+    top: 10px;
+    margin: 15px 0 -15px -30px;
+}
+
+.infrastructure__left, .infrastructure__center, .infrastructure__right {
+    float: left;
+    width: 350px;
+    margin-right: 25px;
+}
+
+.infrastructure__right {
+    margin-right: 0;
+}
+
+.infrastructure__main ul li {
+    font-size: 16px;
+    line-height: 37px;
+    border-bottom: 1px solid #dae8da;
+}
+
+/* Зеленая волна */
+
+.green-wave {
+    background: url("img/green-wave.png") no-repeat;
+    font-size: 17px;
+    color: #fff;
+    margin-top: -8px;
+}
+
+.green-wave__wrap:after {
+    display: block;
+    content: '';
+    height: 100%;
+    clear: both;
+}
+
+.green-wave span {
+    font-family: 'Roboto Slab Bold', serif;
+}
+
+.green-wave p {
+    padding: 5px 0 0 79px;
+}
+
+.green-wave__left, .green-wave__center, .green-wave__right {
+    float: left;
+    height: 59px;
+    margin: 26px 25px 30px 0;
+}
+
+.green-wave__left {
+    width: 347px;
+    background: url("icon/hourglass.png") no-repeat;
+    margin-left: 95px;
+}
+
+.green-wave__center {
+    width: 318px;
+    background: url("icon/schoolcrossing.png") no-repeat;
+}
+
+.green-wave__right {
+    width: 382px;
+    background: url("icon/treestructure.png") no-repeat;
+    margin-right: 0;
+}
+
+/* Блок конструкция */
+
+.design {
+    padding: 80px 0 56px;
+}
+
+.design__main {
+    padding:  47px 0 0 94px;
+}
+
+.design__main:after {
+    display: block;
+    content: '';
+    height: 100%;
+    clear: both;
+}
+
+.design__main h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.design__main p {
+    padding-top: 20px;
+}
+
+.design__left, .design__center, .design__right {
+    float: left;
+    width: 302px;
+    margin-right: 70px;
+}
+
+/* Блок комплектация */
+
+.picking {
+    background: url("img/bg-picking.png") no-repeat;
+    color: #fff;
+    padding: 65px 0 70px 0;
+}
+
+.picking__wrap {
+    padding-left: 60px;
+}
+
+.picking__wrap:after {
+    display: block;
+    content: '';
+    height: 100%;
+    clear: both;
+}
+
+.picking h3 {
+    padding: 40px 0 25px 60px;
+}
+
+.picking__left, .picking__center, .picking__right {
+    float: left;
+}
+
+.picking__left {
+    width: 325px;
+    margin-right: 25px;
+}
+
+.picking__center {
+    width: 352px;
+    margin-right: 25px;
+}
+
+.picking__right {
+    width: 443px;
+}
+
+.picking ul li {
+    font-size: 16px;
+    line-height: 37px;
+    border-bottom: 1px solid #48a443;
+    background: url("icon/tick.png") no-repeat 0 12px;
+    padding-left: 22px;
+}
+
+/* Блок документация*/
+
+.documentation {
+    background: url("img/bg-documentation.png") no-repeat;
+    padding: 72px 0 50px;
+}
+
+.documentation__desc {
+    font-size: 21px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 34px;
+}
+
+.documentation img {
+    padding-right: 40px;
+}
+
+.documentation__img {
+    padding-left: 70px;
+}
+
+/* Подвал сайта*/
+
+.footer {
+    height: 115px;
+    background: #000;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.copy {
+    width: 230px;
+    float: left;
+    font-size: 13px;
+    line-height: 17px;
+    margin: 35px 0 0 20px;
+}
+
+.copy a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.address {
+    width: 300px;
+    float: left;
+    font-size: 14px;
+    background: url("icon/marker.png") no-repeat;
+    margin: 10px 0  0 70px;
+}
+
+.address span {
+    font-family: 'Roboto Slab Bold', serif;
+}
+
+.address p {
+    padding-left: 20px;
+}
+
+.footer-phone {
+    color: #fff;
+}
+
+.footer-phone a {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.footer-phone a:active {
+    color: #000;
+    background: #fff;
+}
+
+.email {
+    font-size: 13px;
+    padding-top: 5px;
+}
