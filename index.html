@@ -31,7 +31,7 @@
             </nav>
             <div class="phone">
                 <p>+7(495) 544-23-12</p>
-                <a href="#">Заказать звонок</a>
+                <a class="button" href="#"><i class="fa fa-phone fa-button" aria-hidden="true"></i>Заказать звонок</a>
             </div>
         </div>
     </header>
@@ -49,18 +49,24 @@
                     <p class="form__title">Запишитесь на просмотр прямо сейчас!</p>
                     <p class="form__description">Покажем Вам квартиры в удобное для Вас время</p>
                     <form method="post" action="#">
-                        <input type="text" name="name" placeholder="Имя">
-                        <input type="tel" name="tel" placeholder="Телефон">
+                        <label class="form-group">
+                            <i class="fa fa-user fa-input" aria-hidden="true"></i>
+                            <input type="text" name="name" placeholder="Имя">
+                        </label>
+                        <label class="form-group">
+                            <i class="fa fa-phone fa-input" aria-hidden="true"></i>
+                            <input type="tel" name="tel" placeholder="Телефон">
+                        </label>
                         <input type="submit" value="Записаться на просмотр!">
                     </form>
-                    <p class="counter">Осталось всего <span>5</span> квартир!</p>
+                    <p class="form__counter">Осталось всего <span>5</span> квартир!</p>
                 </div>
             </div>
         </div>
         <!-- Блок преимуществ -->
-        <div class="advantages">
+        <section class="advantages">
             <div class="container">
-                <div class="advantages__wrap">
+                <div class="advantages__wrap clearfix">
                     <div class="advantages__item">
                         <p><span>5 минут</span> до<br> центра</p>
                     </div>
@@ -81,7 +87,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Фиолетовая волна -->
         <div class="purple-wave">
             <div class="container">
@@ -91,11 +97,11 @@
             </div>
         </div>
         <!-- Блок расположение -->
-        <div class="location">
+        <section class="location">
             <div class="container">
                 <h2>Идеальное расположение дома</h2>
                 <p class="location__desc">Тихий и экологически чистый район</p>
-                <div class="location__image">
+                <div class="location__image clearfix ">
                     <div class="location__left">
                         <img src="img/river.png" alt="Близость к реке">
                         <h3>Близость к реке</h3>
@@ -113,12 +119,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Блок инфраструктура -->
-        <div class="infrastructure">
+        <section class="infrastructure">
             <div class="container">
                 <h2>Развитая инфраструктура</h2>
-                <div class="infrastructure__main">
+                <div class="infrastructure__main clearfix">
                     <div class="infrastructure__left">
                         <h3>Социальные объекты</h3>
                         <ul>
@@ -150,11 +156,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Зеленая волна -->
         <div class="green-wave">
             <div class="container">
-                <div class="green-wave__wrap">
+                <div class="green-wave__wrap clearfix">
                     <div class="green-wave__left">
                         <p><span>До центра 5 минут на машине</span> или общ. транспорте</p>
                     </div>
@@ -168,10 +174,10 @@
             </div>
         </div>
         <!-- Блок конструкция -->
-        <div class="design">
+        <section class="design">
             <div class="container">
                 <h2>Продуманная конструкция дома</h2>
-                <div class="design__main">
+                <div class="design__main clearfix">
                     <div class="design__left">
                         <h3>Заголовок про стену</h3>
                         <img src="img/wall.png" alt="">
@@ -189,44 +195,44 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Блок комплектация -->
-        <div class="picking">
+        <section class="picking">
             <div class="container">
                 <h2>Комплектация</h2>
                 <h3>В каждой квартире</h3>
-                <div class="picking__wrap">
+                <div class="picking__wrap clearfix">
                     <div class="picking__left">
                         <ul>
-                            <li>Газовый котел: Название</li>
-                            <li>Ванна: Металлическая</li>
-                            <li>Умывальник: Керамический</li>
-                            <li>Унитаз: Керамический</li>
-                            <li>Газовая плита: Четырехкомфорочная</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Газовый котел: Название</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Ванна: Металлическая</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Умывальник: Керамический</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Унитаз: Керамический</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Газовая плита: Четырехкомфорочная</li>
                         </ul>
                     </div>
                     <div class="picking__center">
                         <ul>
-                            <li>Балкон: Застекленный</li>
-                            <li>Отделка пола: Линолеум</li>
-                            <li>Отделка пола в с/у: Плитка</li>
-                            <li>Отделка стен: Водоэмульсионная краска</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Балкон: Застекленный</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Отделка пола: Линолеум</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Отделка пола в с/у: Плитка</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Отделка стен: Водоэмульсионная краска</li>
                         </ul>
                     </div>
                     <div class="picking__right">
                         <ul>
-                            <li>Дверь входная: Стальная</li>
-                            <li>Двери межкомнатные: Деревянные</li>
-                            <li>Окна: ПВХ</li>
-                            <li>Отделка стен в с/у: Частично плитка керамическая</li>
-                            <li>Отделка потолков: Водоэмульсионная краска</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Дверь входная: Стальная</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Двери межкомнатные: Деревянные</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Окна: ПВХ</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Отделка стен в с/у: Частично плитка керамическая</li>
+                            <li><i class="fa fa-check-circle" aria-hidden="true"></i>Отделка потолков: Водоэмульсионная краска</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Блок документация -->
-        <div class="documentation">
+        <section class="documentation">
             <div class="container">
                 <h2>У наc есть все необходимые документы</h2>
                 <p class="documentation__desc">Обеспечивающие надежность и Вашу защиту</p>
@@ -235,7 +241,7 @@
                 <img src="img/dogovor-na-vivoz-musora.png" alt="Договор на вывоз мусора">
                 <img src="img/svid-na-zemlyu.png" alt="Свидетельство на землю">
             </div>
-        </div>
+        </section>
     </main>
     <!-- Подвал -->
     <footer class="footer">
@@ -257,11 +263,12 @@
                 <p class="email"><span>E-mail:</span> info@sitename.ru</p>
             </div>
             <div class="phone footer-phone">
-                <p>+7(495)544-23-12</p>
-                <a href="#">Заказать звонок</a>
+                <p>+7(495) 544-23-12</p>
+                <a class="button footer-button" href="#"><i class="fa fa-phone fa-button" aria-hidden="true"></i>Заказать звонок</a>
             </div>
         </div>
     </footer>
 </div>
+<script src="https://use.fontawesome.com/61b0cf2d7e.js"></script>
 </body>
 </html>
